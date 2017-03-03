@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Angular - Redux</title>
+	<link rel="stylesheet" href="app.bundle.css"></link>
+</head>
+
+<body ng-app="anredux" role="document">
+
+	<div ng-cloak="true" id="wrapper">
+		<ngr-nav></ngr-nav>
+
+		<!-- Page Content -->
+		<div id="page-content-wrapper" class="content-container">
+			<div class="container-fluid">
+				<div class="row">
+					<div ng-view/>
+				</div>
+			</div>
+		</div>
+		<!-- /#page-content-wrapper -->
+
+	</div>
+
+	<script src="app.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<button class="btn btn-default" ng-click="usersctrl.fetchUsers()">Refresh</button>
+<br>
+<br>
+<ul>
+	<li ng-hide="usersctrl.users.length > 0 || usersctrl.loading">Keine Eintr&auml;ge</li>
+	<li ng-show="usersctrl.loading">Lade Daten ...</li>
+	<li ng-repeat="user in usersctrl.users">{{ user.name }}</li>
+</ul>
