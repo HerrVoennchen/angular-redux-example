@@ -29,9 +29,6 @@ app.config(function($routeProvider, $ngReduxProvider) {
 	$routeProvider.when('/home', {
 		templateUrl: 'container/home.html'
 	})
-	.when('/config', {
-		templateUrl: 'container/config.html'
-	})
 	.otherwise({
 		redirectTo: '/home',
 	});
